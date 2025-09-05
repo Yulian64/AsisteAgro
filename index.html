@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Imgs/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AsisteAgro - Tu Guía Completa de Cultivos</title>
+    <meta name="description" content="Encuentra guías detalladas sobre cultivos, identifica plagas y enfermedades, y obtén consultas técnicas. AsisteAgro es tu asistente agrícola inteligente." />
+    <meta property="og:url" content="[URL de tu sitio una vez desplegado]" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <!-- FORMULARIO OCULTO PARA NETLIFY -->
+    <!-- Este formulario NUNCA será visible para el usuario. -->
+    <!-- Es solo para que el robot de Netlify lo detecte durante la construcción. -->
+    <form name="consulta-tecnica" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="tel" name="phone" />
+      <select name="cropType">
+        <option></option>
+      </select>
+      <textarea name="consultation"></textarea>
+    </form>
+  <!-- FIN DEL FORMULARIO OCULTO -->
+   
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
